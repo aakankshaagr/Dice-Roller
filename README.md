@@ -170,6 +170,33 @@ This is what the rollDice() method looks like:
 Run your app. The dice result should change to other values besides 6! Since it is a random number from 1 to 6, the value 6 might appear sometimes, too.
 
 ![image](https://user-images.githubusercontent.com/71868375/147631109-7d698877-5115-4460-9149-0b90eb863559.png)
+ 
+## Use a when statement
+Testing for many different outcomes, or cases, is very common in programming. Sometimes, the list of possible outcomes can be very long. For example, if you were rolling a 12-sided dice, you'd have 11 else if statements between the success and the final else. To make these kinds of statements easier to write and read, which helps avoid errors, Kotlin makes available a when statement.
+ 
+ As before, first test whether rollResult is the same as the luckyNumber.
+
+Inside the curly braces {} of the when statement, add a statement that tests rollResult against luckyNumber, and if they are the same, print the winning message. The statement looks like this:
+
+`when(RollResult){
+    luckyNumber -> println("You win!")
+    }`
+This means:
+
+You first put the value you are comparing to `rollResult`. That's luckyNumber.
+Follow that with an `arrow` (->).
+Then add the action to perform if there is a match.
+Read this as, "If rollResult is luckyNumber, then print the "You win!" message."
+    `when (rollResult) {
+        luckyNumber -> println("You won!")
+        1 -> println("So sorry! You rolled a 1. Try again!")
+        2 -> println("Sadly, you rolled a 2. Try again!")
+        3 -> println("Unfortunately, you rolled a 3. Try again!")
+        5 -> println("Don't cry! You rolled a 5. Try again!")
+        6 -> println("Apologies! You rolled a 6. Try again!")
+    }`
 
 Hooray, you rock!
 
+    **Note:**  1. Writing  parameter type is important in class and return function.
+                2. Classes can be wriiten in seperate file or outside in main activity file.
