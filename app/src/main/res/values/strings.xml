@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Dice Roller</string>
+    <string name="roll">Roll</string>
+    <string name="todo">TODO</string>
+    <string name="roll_the_dice">Roll the dice</string>
+    <string name="image">IMAGE</string>
+    <string name="imageView">IMGVIEW</string>
+</resources>
