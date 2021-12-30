@@ -201,3 +201,5 @@ Hooray, you rock!
 
     Note:  1. Writing  parameter type is important in class and return function.
                 2. Classes can be wriiten in seperate file or outside in main activity file.
+                3. You need to adjust text size box to fix value in it otherwise number will appear below each other doesn't matter input type is string or numbers.
+                4. since input type is string we are using toString() method to convert from number to string.
